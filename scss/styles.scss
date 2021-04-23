@@ -1,0 +1,15 @@
+:root{
+  --purple:#3A0F5B;
+  --cyan:#00CFDB;
+  --red:#F71857;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: var(--purple);
+}

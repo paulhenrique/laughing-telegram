@@ -1,0 +1,16 @@
+{
+  "name": "landing-hello-yotta",
+  "version": "1.0.0",
+  "description": "Landing page da Startup Hello Yotta",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w scss/ -o css/ --recursive",
+    "sass--watch": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "author": "Paulo Henrique Vieira Candido",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
