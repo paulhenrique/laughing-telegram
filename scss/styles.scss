@@ -27,6 +27,11 @@
   width: 90%;
   margin: auto;
 }
+@mixin h1Header{
+  font-size: 3.375rem;
+  font-weight: normal;
+  text-align: center;
+}
 body{
   background: var(--purple);
   font-family: 'Poppins', sans-serif;
@@ -97,12 +102,10 @@ main{
     }
   }
 
-  section:not(.NavbarContent){
+  section:not(.NavbarContent):not(.containerComoTrabalhamos){
     @include addContainer;
     h1{
-      font-size: 3.375rem;
-      font-weight: normal;
-      text-align: center;
+      @include h1Header;
     }
     &.containerFrentesDeAtuacao{
       color: white;
@@ -173,8 +176,43 @@ main{
         }
       }
     }
+  }
+  section.containerComoTrabalhamos{
+    background: white;
+    .container{
+    @include addContainer;
+      display: flex;
+      flex-direction: column;
+      justify-content:center;
+      align-items:center;
+      h1{
+        @include h1Header;
+      }
+      article{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 195px;
+        img{
+          max-width: 547px;
+        }
+        .containerText{
+          max-width: 582px;
+          h2{
+            font-weight: 400;
+            font-size: 2rem;
+          }
+          p{
+            font-size: 1.25rem;
+            color:#525252;
+            line-height: 2.68125rem;
+          }
+        }
+        
+      }
+    }
 
   }
-
  
 }

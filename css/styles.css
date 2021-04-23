@@ -76,23 +76,23 @@ main {
         padding: 0;
         margin: 0;
         transform: translate(-35%, 69%); }
-  main section:not(.NavbarContent) {
+  main section:not(.NavbarContent):not(.containerComoTrabalhamos) {
     max-width: 1224px;
     width: 90%;
     margin: auto; }
-    main section:not(.NavbarContent) h1 {
+    main section:not(.NavbarContent):not(.containerComoTrabalhamos) h1 {
       font-size: 3.375rem;
       font-weight: normal;
       text-align: center; }
-    main section:not(.NavbarContent).containerFrentesDeAtuacao {
+    main section:not(.NavbarContent):not(.containerComoTrabalhamos).containerFrentesDeAtuacao {
       color: white; }
-      main section:not(.NavbarContent).containerFrentesDeAtuacao .containerCards {
+      main section:not(.NavbarContent):not(.containerComoTrabalhamos).containerFrentesDeAtuacao .containerCards {
         display: grid;
         grid-template-columns: auto auto;
         column-gap: 15px;
         row-gap: 15px;
         margin-top: 90px; }
-        main section:not(.NavbarContent).containerFrentesDeAtuacao .containerCards .card {
+        main section:not(.NavbarContent):not(.containerComoTrabalhamos).containerFrentesDeAtuacao .containerCards .card {
           height: 596px;
           max-height: 596px;
           text-align: center;
@@ -106,32 +106,63 @@ main {
           cursor: default;
           position: relative;
           z-index: 0; }
-          main section:not(.NavbarContent).containerFrentesDeAtuacao .containerCards .card:hover {
+          main section:not(.NavbarContent):not(.containerComoTrabalhamos).containerFrentesDeAtuacao .containerCards .card:hover {
             filter: brightness(0.9);
             box-shadow: inset 0 0 0 2px var(--cyan);
             transform: scale(1.01); }
-          main section:not(.NavbarContent).containerFrentesDeAtuacao .containerCards .card h1 {
+          main section:not(.NavbarContent):not(.containerComoTrabalhamos).containerFrentesDeAtuacao .containerCards .card h1 {
             font-size: 2rem;
             font-weight: 600 !important; }
-          main section:not(.NavbarContent).containerFrentesDeAtuacao .containerCards .card p {
+          main section:not(.NavbarContent):not(.containerComoTrabalhamos).containerFrentesDeAtuacao .containerCards .card p {
             max-width: 429px;
             font-size: 1.125rem;
             line-height: 1.83375rem;
             font-weight: 400;
             margin-top: 14px; }
-          main section:not(.NavbarContent).containerFrentesDeAtuacao .containerCards .card img {
+          main section:not(.NavbarContent):not(.containerComoTrabalhamos).containerFrentesDeAtuacao .containerCards .card img {
             position: absolute;
             position: absolute;
             z-index: 1; }
-          main section:not(.NavbarContent).containerFrentesDeAtuacao .containerCards .card:first-child img, main section:not(.NavbarContent).containerFrentesDeAtuacao .containerCards .card:nth-child(3) img {
+          main section:not(.NavbarContent):not(.containerComoTrabalhamos).containerFrentesDeAtuacao .containerCards .card:first-child img, main section:not(.NavbarContent):not(.containerComoTrabalhamos).containerFrentesDeAtuacao .containerCards .card:nth-child(3) img {
             left: 0;
             top: 100%;
             transform: translate(-50%, -60%); }
-          main section:not(.NavbarContent).containerFrentesDeAtuacao .containerCards .card:nth-child(2) img {
+          main section:not(.NavbarContent):not(.containerComoTrabalhamos).containerFrentesDeAtuacao .containerCards .card:nth-child(2) img {
             left: 90%;
             top: 15%;
             transform: translate(-50%, -60%); }
-          main section:not(.NavbarContent).containerFrentesDeAtuacao .containerCards .card:nth-child(4) img {
+          main section:not(.NavbarContent):not(.containerComoTrabalhamos).containerFrentesDeAtuacao .containerCards .card:nth-child(4) img {
             left: 90%;
             top: 15%;
             transform: translate(-50%, -60%); }
+  main section.containerComoTrabalhamos {
+    background: white; }
+    main section.containerComoTrabalhamos .container {
+      max-width: 1224px;
+      width: 90%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      main section.containerComoTrabalhamos .container h1 {
+        font-size: 3.375rem;
+        font-weight: normal;
+        text-align: center; }
+      main section.containerComoTrabalhamos .container article {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 195px; }
+        main section.containerComoTrabalhamos .container article img {
+          max-width: 547px; }
+        main section.containerComoTrabalhamos .container article .containerText {
+          max-width: 582px; }
+          main section.containerComoTrabalhamos .container article .containerText h2 {
+            font-weight: 400;
+            font-size: 2rem; }
+          main section.containerComoTrabalhamos .container article .containerText p {
+            font-size: 1.25rem;
+            color: #525252;
+            line-height: 2.68125rem; }
