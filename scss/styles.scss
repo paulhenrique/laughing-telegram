@@ -36,6 +36,30 @@
   text-align: center;
 }
 
+@mixin HeaderParagraph {
+  font-size: 1.25rem;
+  color: white;
+  max-width: 624px;
+  line-height: 2.68125rem;
+  position: relative;
+  margin-left: 38px;
+
+  &:before,
+  &:after {
+    content: '"';
+    position: absolute;
+    font-size: 84px;
+    top: 0;
+    left: -25px;
+    opacity: 0.72;
+    padding: 0;
+    margin: 0;
+    transform: translate(-35%, 69%);
+  }
+
+  &:after {}
+}
+
 body {
   background: var(--purple);
   font-family: "Poppins", sans-serif;
@@ -80,6 +104,7 @@ main {
   header {
     @include addContainer;
     padding-top: 135px;
+    min-height: 980px;
 
     h1 {
       color: white;
@@ -89,31 +114,11 @@ main {
     }
 
     p {
-      font-size: 1.25rem;
-      color: white;
-      max-width: 624px;
-      line-height: 2.68125rem;
-      position: relative;
-      margin-left: 38px;
-
-      &:before,
-      &:after {
-        content: '"';
-        position: absolute;
-        font-size: 84px;
-        top: 0;
-        left: -25px;
-        opacity: 0.72;
-        padding: 0;
-        margin: 0;
-        transform: translate(-35%, 69%);
-      }
-
-      &:after {}
+      @include HeaderParagraph;
     }
   }
 
-  section:not(.NavbarContent):not(.containerComoTrabalhamos):not(.containerContact) {
+  section:not(.NavbarContent):not(.containerComoTrabalhamos):not(.containerContact):not(.containerAssistenciaEducacional) {
     @include addContainer;
 
     h1 {
@@ -337,7 +342,46 @@ main {
     }
   }
 
+  section.containerAssistenciaEducacional {
+    background: var(--cyan);
+    position: relative;
 
+    &:before {
+      content: "";
+      height: 300px;
+      width: 100%;
+      position: absolute;
+      top: -300px;
+      left: 0;
+      background-image: url(/img/backgroundAssistenciaEducacional.png);
+      /* z-index: 999; */
+      /* background-color: black; */
+      background-size: 100%;
+      background-position: 0 -240px;
+      background-repeat: no-repeat;
+    }
+
+    div.container {
+      @include addContainer;
+      display: flex;
+      justify-content: space-between;
+      color: white;
+
+      div.rightContain {
+
+        h1 {
+          font-weight: 400;
+          line-height: 5.0625rem;
+          font-size: 3rem;
+        }
+
+        p {
+          @include HeaderParagraph;
+          max-width: 587.13px;
+        }
+      }
+    }
+  }
 }
 
 footer {
