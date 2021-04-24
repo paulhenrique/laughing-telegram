@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <title>Hello Yotta</title>
 </head>
 
@@ -22,7 +24,7 @@
     </nav>
 
     <header>
-      <h1>
+      <h1 data-aos="fade-up">
         <span class="red">
           Uma nova forma de </span><strong>Pensar e <br></span>Ensinar <span class="cyan">Tecnologia</span></strong>
       </h1>
@@ -38,8 +40,8 @@
 
     <section class="containerAssistenciaEducacional">
       <div class="container">
-        <img src="/img/assistenciaEducacional.svg" alt="Pai levando o filho">
-        <div class="rightContain">
+        <img data-aos="zoom-out-right" src="/img/assistenciaEducacional.svg" alt="Pai levando o filho">
+        <div class="rightContain" data-aos="zoom-out-left">
           <h1><span class="red">Assistência</span> Educacional<br> <span class="red">e</span> Aprendizagem <span
               class="red"><br>Significativa</span>
           </h1>
@@ -60,8 +62,8 @@
           Como trabalhamos
         </h1>
         <article>
-          <img src="/img/menino_sorrindo.png" alt="Metodologias Ativas">
-          <div class="containerText">
+          <img data-aos="fade-right" src="/img/menino_sorrindo.png" data-aos-duration="1500" alt="Metodologias Ativas">
+          <div class="containerText" data-aos="fade-left" data-aos-duration="1500">
             <h2 class="red">
               Metodologias Ativas
             </h2>
@@ -73,7 +75,7 @@
           </div>
         </article>
         <article>
-          <div class="containerText">
+          <div class="containerText" data-aos="fade-right" data-aos-duration="1500">
             <h2 class="cyan">
               Cultura Maker
             </h2>
@@ -83,11 +85,11 @@
               em projetos multidisciplinares.
             </p>
           </div>
-          <img src="/img/astronauta.svg" alt="Metodologias Ativas">
+          <img src="/img/astronauta.svg" alt="Metodologias Ativas" data-aos="fade-left" data-aos-duration="1500">
         </article>
         <article>
-          <img src="/img/carrinho.png" alt="Metodologias Ativas">
-          <div class="containerText">
+          <img data-aos="fade-right" data-aos-duration="1500" src="/img/carrinho.png" alt="Metodologias Ativas">
+          <div class="containerText" data-aos="fade-left" data-aos-duration="1500">
             <h2 class="purple">
               Robótica Educacional
             </h2>
@@ -98,7 +100,7 @@
           </div>
         </article>
         <article>
-          <div class="containerText">
+          <div class="containerText" data-aos="fade-right" data-aos-duration="1500">
             <h2 class="purple">
               Professor como Orientador
             </h2>
@@ -108,17 +110,17 @@
               crítico no desenvolvimento de projetos.
             </p>
           </div>
-          <img src="/img/professora.png" alt="Metodologias Ativas">
+          <img src="/img/professora.png" alt="Metodologias Ativas" data-aos="fade-left" data-aos-duration="1500">
         </article>
       </div>
     </section>
 
     <section class="containerFrentesDeAtuacao">
-      <h1>
+      <h1 data-aos="fade-down" data-aos-duration="1500">
         Nossas Frentes de <br> <strong>Atuação Educacional</strong>
       </h1>
 
-      <div class="containerCards">
+      <div class="containerCards" data-aos="fade-up" data-aos-duration="1500">
         <div class="card">
           <img src="/img/box.svg" alt="Caixa">
           <h1>
@@ -197,5 +199,8 @@
     <p>www.helloyotta.com.br | contato@helloyotta.com.br</p>
   </footer>
 </body>
+<script>
+  AOS.init();
+</script>
 
 </html>
