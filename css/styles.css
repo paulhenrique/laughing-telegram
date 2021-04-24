@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 :root {
-  --purple:#3A0F5B;
-  --cyan:#00CFDB;
-  --red:#F71857; }
+  --purple: #3a0f5b;
+  --cyan: #00cfdb;
+  --red: #f71857; }
 
 .cyan {
   color: var(--cyan); }
@@ -20,7 +20,7 @@
 
 body {
   background: var(--purple);
-  font-family: 'Poppins', sans-serif; }
+  font-family: "Poppins", sans-serif; }
 
 main {
   background-image: url(/img/backgroundHeader.svg);
@@ -76,62 +76,62 @@ main {
         padding: 0;
         margin: 0;
         transform: translate(-35%, 69%); }
-  main section:not(.NavbarContent):not(.containerComoTrabalhamos) {
+  main section:not(.NavbarContent):not(.containerComoTrabalhamos):not(.containerContact) {
     max-width: 1224px;
     width: 90%;
     margin: auto; }
-    main section:not(.NavbarContent):not(.containerComoTrabalhamos) h1 {
+    main section:not(.NavbarContent):not(.containerComoTrabalhamos):not(.containerContact) h1 {
       font-size: 3.375rem;
       font-weight: normal;
       text-align: center; }
-    main section:not(.NavbarContent):not(.containerComoTrabalhamos).containerFrentesDeAtuacao {
+    main section:not(.NavbarContent):not(.containerComoTrabalhamos):not(.containerContact).containerFrentesDeAtuacao {
       color: white; }
-      main section:not(.NavbarContent):not(.containerComoTrabalhamos).containerFrentesDeAtuacao .containerCards {
+      main section:not(.NavbarContent):not(.containerComoTrabalhamos):not(.containerContact).containerFrentesDeAtuacao .containerCards {
         display: grid;
         grid-template-columns: auto auto;
         column-gap: 15px;
         row-gap: 15px;
         margin-top: 90px; }
-        main section:not(.NavbarContent):not(.containerComoTrabalhamos).containerFrentesDeAtuacao .containerCards .card {
+        main section:not(.NavbarContent):not(.containerComoTrabalhamos):not(.containerContact).containerFrentesDeAtuacao .containerCards .card {
           height: 596px;
           max-height: 596px;
           text-align: center;
-          background-color: #4C256A;
+          background-color: #4c256a;
           border-radius: 5px;
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          transition: filter .15s, box-shadow .25s, transform .25s;
+          transition: filter 0.15s, box-shadow 0.25s, transform 0.25s;
           cursor: default;
           position: relative;
           z-index: 0; }
-          main section:not(.NavbarContent):not(.containerComoTrabalhamos).containerFrentesDeAtuacao .containerCards .card:hover {
+          main section:not(.NavbarContent):not(.containerComoTrabalhamos):not(.containerContact).containerFrentesDeAtuacao .containerCards .card:hover {
             filter: brightness(0.9);
             box-shadow: inset 0 0 0 2px var(--cyan);
             transform: scale(1.01); }
-          main section:not(.NavbarContent):not(.containerComoTrabalhamos).containerFrentesDeAtuacao .containerCards .card h1 {
+          main section:not(.NavbarContent):not(.containerComoTrabalhamos):not(.containerContact).containerFrentesDeAtuacao .containerCards .card h1 {
             font-size: 2rem;
             font-weight: 600 !important; }
-          main section:not(.NavbarContent):not(.containerComoTrabalhamos).containerFrentesDeAtuacao .containerCards .card p {
+          main section:not(.NavbarContent):not(.containerComoTrabalhamos):not(.containerContact).containerFrentesDeAtuacao .containerCards .card p {
             max-width: 429px;
             font-size: 1.125rem;
             line-height: 1.83375rem;
             font-weight: 400;
             margin-top: 14px; }
-          main section:not(.NavbarContent):not(.containerComoTrabalhamos).containerFrentesDeAtuacao .containerCards .card img {
+          main section:not(.NavbarContent):not(.containerComoTrabalhamos):not(.containerContact).containerFrentesDeAtuacao .containerCards .card img {
             position: absolute;
             position: absolute;
             z-index: 1; }
-          main section:not(.NavbarContent):not(.containerComoTrabalhamos).containerFrentesDeAtuacao .containerCards .card:first-child img, main section:not(.NavbarContent):not(.containerComoTrabalhamos).containerFrentesDeAtuacao .containerCards .card:nth-child(3) img {
+          main section:not(.NavbarContent):not(.containerComoTrabalhamos):not(.containerContact).containerFrentesDeAtuacao .containerCards .card:first-child img, main section:not(.NavbarContent):not(.containerComoTrabalhamos):not(.containerContact).containerFrentesDeAtuacao .containerCards .card:nth-child(3) img {
             left: 0;
             top: 100%;
             transform: translate(-50%, -60%); }
-          main section:not(.NavbarContent):not(.containerComoTrabalhamos).containerFrentesDeAtuacao .containerCards .card:nth-child(2) img {
+          main section:not(.NavbarContent):not(.containerComoTrabalhamos):not(.containerContact).containerFrentesDeAtuacao .containerCards .card:nth-child(2) img {
             left: 90%;
             top: 15%;
             transform: translate(-50%, -60%); }
-          main section:not(.NavbarContent):not(.containerComoTrabalhamos).containerFrentesDeAtuacao .containerCards .card:nth-child(4) img {
+          main section:not(.NavbarContent):not(.containerComoTrabalhamos):not(.containerContact).containerFrentesDeAtuacao .containerCards .card:nth-child(4) img {
             left: 90%;
             top: 15%;
             transform: translate(-50%, -60%); }
@@ -166,3 +166,77 @@ main {
             font-size: 1.25rem;
             color: #525252;
             line-height: 2.68125rem; }
+  main section.containerContact {
+    max-width: 1224px;
+    width: 90%;
+    margin: auto;
+    margin-top: 206px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main section.containerContact h1 {
+      font-size: 3.375rem;
+      font-weight: normal;
+      text-align: center; }
+    main section.containerContact .containerForm {
+      max-width: 831px;
+      width: 90%; }
+      main section.containerContact .containerForm form {
+        width: 100%; }
+        main section.containerContact .containerForm form input,
+        main section.containerContact .containerForm form textarea {
+          width: 100%;
+          padding: 25px 33px;
+          border-radius: 5px;
+          font-size: 1.25rem;
+          margin-top: 40px;
+          border: none;
+          transition: box-shadow .25s, filter .25s;
+          max-height: 184px; }
+          main section.containerContact .containerForm form input:hover,
+          main section.containerContact .containerForm form textarea:hover {
+            filter: brightness(0.95); }
+          main section.containerContact .containerForm form input:focus-visible,
+          main section.containerContact .containerForm form textarea:focus-visible {
+            filter: brightness(0.95);
+            outline: 0;
+            box-shadow: var(--red) 0 0 0 4px inset; }
+        main section.containerContact .containerForm form .containerTextArea {
+          position: relative;
+          overflow: hidden;
+          max-height: 184px;
+          border-radius: 5px; }
+          main section.containerContact .containerForm form .containerTextArea button {
+            background: var(--cyan);
+            color: white;
+            position: absolute;
+            right: 0;
+            top: 40px;
+            height: calc(100% - 30px);
+            border: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px 20px;
+            cursor: pointer;
+            transition: filter .25s;
+            z-index: 1; }
+            main section.containerContact .containerForm form .containerTextArea button:before {
+              background: var(--cyan);
+              content: "";
+              height: 110%;
+              width: 100%;
+              position: absolute;
+              z-index: -1;
+              transform: rotate(8deg) translate(-11px, 15px); }
+            main section.containerContact .containerForm form .containerTextArea button:focus-visible {
+              outline: 0; }
+            main section.containerContact .containerForm form .containerTextArea button:hover {
+              filter: brightness(0.95); }
+        main section.containerContact .containerForm form textarea {
+          font-family: Poppins, sans-serif;
+          box-sizing: border-box; }

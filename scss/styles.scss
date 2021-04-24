@@ -1,64 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-:root{
-  --purple:#3A0F5B;
-  --cyan:#00CFDB;
-  --red:#F71857;
+:root {
+  --purple: #3a0f5b;
+  --cyan: #00cfdb;
+  --red: #f71857;
 }
-.cyan{
+
+.cyan {
   color: var(--cyan);
 }
 
-.purple{
+.purple {
   color: var(--purple);
 }
 
-.red{
+.red {
   color: var(--red);
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 @mixin addContainer {
   max-width: 1224px;
   width: 90%;
   margin: auto;
 }
-@mixin h1Header{
+
+@mixin h1Header {
   font-size: 3.375rem;
   font-weight: normal;
   text-align: center;
 }
-body{
+
+body {
   background: var(--purple);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-main{
+main {
   background-image: url(/img/backgroundHeader.svg);
   background-repeat: no-repeat;
   background-position: right top;
   background-size: 50%;
 
- nav{
+  nav {
     @include addContainer;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 32px;
-    img{
-      width:189px !important;
+
+    img {
+      width: 189px !important;
     }
-    section.NavbarContent{
+
+    section.NavbarContent {
       max-width: 379px;
-      width:50%;
+      width: 50%;
       display: flex;
       align-items: center;
-      justify-content:space-between;
-      a{
+      justify-content: space-between;
+
+      a {
         text-decoration: none;
         font-weight: 500;
         font-size: 1.125rem;
@@ -66,18 +73,21 @@ main{
         color: var(--purple);
       }
     }
-  } //end Nav
+  }
+
+  //end Nav
 
   header {
     @include addContainer;
     padding-top: 135px;
 
-    h1{
+    h1 {
       color: white;
       font-size: 4.75rem;
       font-weight: 400;
       max-width: 751px;
     }
+
     p {
       font-size: 1.25rem;
       color: white;
@@ -85,8 +95,9 @@ main{
       line-height: 2.68125rem;
       position: relative;
       margin-left: 38px;
-      
-      &:before, &:after{
+
+      &:before,
+      &:after {
         content: '"';
         position: absolute;
         font-size: 84px;
@@ -95,124 +106,234 @@ main{
         opacity: 0.72;
         padding: 0;
         margin: 0;
-        transform: translate(-35%,69%);        
+        transform: translate(-35%, 69%);
       }
-      &:after{
-      }
+
+      &:after {}
     }
   }
 
-  section:not(.NavbarContent):not(.containerComoTrabalhamos){
+  section:not(.NavbarContent):not(.containerComoTrabalhamos):not(.containerContact) {
     @include addContainer;
-    h1{
+
+    h1 {
       @include h1Header;
     }
-    &.containerFrentesDeAtuacao{
+
+    &.containerFrentesDeAtuacao {
       color: white;
-      .containerCards{
-        display:grid;
+
+      .containerCards {
+        display: grid;
         grid-template-columns: auto auto;
         column-gap: 15px;
         row-gap: 15px;
         margin-top: 90px;
-        .card{
-          height:596px;
-          max-height:596px;
+
+        .card {
+          height: 596px;
+          max-height: 596px;
           text-align: center;
-          background-color:#4C256A;
+          background-color: #4c256a;
           border-radius: 5px;
-          display:flex;
+          display: flex;
           flex-direction: column;
           align-items: center;
-          justify-content:center;
-          transition: filter .15s, box-shadow .25s, transform .25s;
+          justify-content: center;
+          transition: filter 0.15s, box-shadow 0.25s, transform 0.25s;
           cursor: default;
-          &:hover{
+
+          &:hover {
             filter: brightness(0.9);
             box-shadow: inset 0 0 0 2px var(--cyan);
             transform: scale(1.01);
           }
-          h1{
+
+          h1 {
             font-size: 2rem;
             font-weight: 600 !important;
           }
 
-          p{
+          p {
             max-width: 429px;
             font-size: 1.125rem;
-            line-height:1.83375rem;
+            line-height: 1.83375rem;
             font-weight: 400;
             margin-top: 14px;
           }
+
           position: relative;
           z-index: 0;
-          img{
+
+          img {
             position: absolute;
             position: absolute;
             z-index: 1;
           }
-          &:first-child, &:nth-child(3){
-            img{
+
+          &:first-child,
+          &:nth-child(3) {
+            img {
               left: 0;
               top: 100%;
               transform: translate(-50%, -60%);
             }
           }
-          &:nth-child(2){
-            img{
+
+          &:nth-child(2) {
+            img {
               left: 90%;
               top: 15%;
               transform: translate(-50%, -60%);
             }
           }
-          &:nth-child(4){
-            img{
+
+          &:nth-child(4) {
+            img {
               left: 90%;
               top: 15%;
               transform: translate(-50%, -60%);
             }
           }
-          
         }
       }
     }
   }
-  section.containerComoTrabalhamos{
+
+  section.containerComoTrabalhamos {
     background: white;
-    .container{
-    @include addContainer;
+
+    .container {
+      @include addContainer;
       display: flex;
       flex-direction: column;
-      justify-content:center;
-      align-items:center;
-      h1{
+      justify-content: center;
+      align-items: center;
+
+      h1 {
         @include h1Header;
       }
-      article{
+
+      article {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
         margin-bottom: 195px;
-        img{
+
+        img {
           max-width: 547px;
         }
-        .containerText{
+
+        .containerText {
           max-width: 582px;
-          h2{
+
+          h2 {
             font-weight: 400;
             font-size: 2rem;
           }
-          p{
+
+          p {
             font-size: 1.25rem;
-            color:#525252;
+            color: #525252;
             line-height: 2.68125rem;
           }
         }
-        
       }
     }
-
   }
- 
+
+  section.containerContact {
+    @include addContainer;
+    margin-top: 206px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      @include h1Header;
+    }
+
+    .containerForm {
+      max-width: 831px;
+      width: 90%;
+
+      form {
+        width: 100%;
+
+        input,
+        textarea {
+          width: 100%;
+          padding: 25px 33px;
+          border-radius: 5px;
+          font-size: 1.25rem;
+          margin-top: 40px;
+          border: none;
+          transition: box-shadow .25s, filter .25s;
+          max-height: 184px;
+
+          &:hover {
+            filter: brightness(0.95);
+          }
+
+          &:focus-visible {
+            filter: brightness(0.95);
+            outline: 0;
+            box-shadow: var(--red) 0 0 0 4px inset;
+          }
+        }
+
+        .containerTextArea {
+          position: relative;
+          overflow: hidden;
+          max-height: 184px;
+          border-radius: 5px;
+
+          button {
+            background: var(--cyan);
+            color: white;
+            position: absolute;
+            right: 0;
+            top: 40px;
+            height: calc(100% - 30px);
+            border: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px 20px;
+            cursor: pointer;
+            transition: filter .25s;
+            z-index: 1;
+
+            &:before {
+              background: var(--cyan);
+              content: "";
+              height: 110%;
+              width: 100%;
+              position: absolute;
+              z-index: -1;
+              transform: rotate(8deg) translate(-11px, 15px);
+            }
+
+            &:focus-visible {
+              outline: 0;
+            }
+
+            &:hover {
+              filter: brightness(0.95);
+            }
+          }
+        }
+
+        textarea {
+          font-family: Poppins, sans-serif;
+          box-sizing: border-box;
+        }
+      }
+    }
+  }
 }
