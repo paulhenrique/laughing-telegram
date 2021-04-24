@@ -336,4 +336,27 @@ main {
       }
     }
   }
+
+
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 303px;
+  font-size: 1rem;
+  background: var(--cyan);
+  color: white;
+  min-height: 300px;
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  img {
+    width: 189px;
+  }
 }
