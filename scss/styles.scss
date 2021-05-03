@@ -6,6 +6,14 @@
   --red: #f71857;
 }
 
+@mixin backgroundImageBasics {
+  position: absolute;
+  bottom: 60%;
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+}
+
 .cyan {
   color: var(--cyan);
 }
@@ -207,6 +215,13 @@ main {
 
   section.containerComoTrabalhamos {
     background: white;
+    position: relative;
+
+    img.backgroundImage {
+      @include backgroundImageBasics;
+      max-heigth: 300px;
+    }
+
 
     .container {
       @include addContainer;
@@ -342,23 +357,14 @@ main {
     }
   }
 
+
+
   section.containerAssistenciaEducacional {
     background: var(--cyan);
     position: relative;
 
-    &:before {
-      content: "";
-      height: 300px;
-      width: 100%;
-      position: absolute;
-      top: -300px;
-      left: 0;
-      background-image: url(/img/backgroundAssistenciaEducacional.png);
-      /* z-index: 999; */
-      /* background-color: black; */
-      background-size: 100%;
-      background-position: 0 -240px;
-      background-repeat: no-repeat;
+    img.backgroundImage {
+      @include backgroundImageBasics
     }
 
     div.container {
