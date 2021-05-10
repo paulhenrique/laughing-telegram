@@ -1,0 +1,93 @@
+section.containerContact {
+  @include addContainer;
+  margin-top: 206px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    @include h1Header;
+  }
+
+  .containerForm {
+    max-width: 831px;
+    width: 90%;
+
+    form {
+      width: 100%;
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 25px 33px;
+        border-radius: 5px;
+        font-size: 1.25rem;
+        margin-top: 40px;
+        border: none;
+        transition: box-shadow .25s, filter .25s;
+        max-height: 184px;
+
+        &:hover {
+          filter: brightness(0.95);
+        }
+
+        &:focus-visible {
+          filter: brightness(0.95);
+          outline: 0;
+          box-shadow: var(--red) 0 0 0 4px inset;
+        }
+      }
+
+      .containerTextArea {
+        position: relative;
+        overflow: hidden;
+        max-height: 184px;
+        border-radius: 5px;
+
+        button {
+          background: var(--cyan);
+          color: white;
+          position: absolute;
+          right: 0;
+          top: 40px;
+          height: calc(100% - 30px);
+          border: none;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+          padding: 20px 20px;
+          cursor: pointer;
+          transition: filter .25s;
+          z-index: 1;
+
+          &:before {
+            background: var(--cyan);
+            content: "";
+            height: 110%;
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+            transform: rotate(8deg) translate(-11px, 15px);
+          }
+
+          &:focus-visible {
+            outline: 0;
+          }
+
+          &:hover {
+            filter: brightness(0.95);
+          }
+        }
+      }
+
+      textarea {
+        font-family: Poppins, sans-serif;
+        box-sizing: border-box;
+      }
+    }
+  }
+}

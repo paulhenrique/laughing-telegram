@@ -1,0 +1,87 @@
+section:not(.NavbarContent):not(.containerComoTrabalhamos):not(.containerContact):not(.containerAssistenciaEducacional) {
+  @include addContainer;
+
+  h1 {
+    @include h1Header;
+  }
+
+  &.containerFrentesDeAtuacao {
+    color: white;
+    padding-top: 10rem;
+
+    .containerCards {
+      display: grid;
+      grid-template-columns: auto auto;
+      column-gap: 15px;
+      row-gap: 15px;
+      margin-top: 90px;
+
+      .card {
+        height: 596px;
+        max-height: 596px;
+        text-align: center;
+        background-color: #4c256a;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: filter 0.15s, box-shadow 0.25s, transform 0.25s;
+        cursor: default;
+
+        &:hover {
+          filter: brightness(0.9);
+          box-shadow: inset 0 0 0 2px var(--cyan);
+          transform: scale(1.01);
+        }
+
+        h1 {
+          font-size: 2rem;
+          font-weight: 600 !important;
+        }
+
+        p {
+          max-width: 429px;
+          font-size: 1.125rem;
+          line-height: 1.83375rem;
+          font-weight: 400;
+          margin-top: 14px;
+        }
+
+        position: relative;
+        z-index: 0;
+
+        img {
+          position: absolute;
+          position: absolute;
+          z-index: 1;
+        }
+
+        &:first-child,
+        &:nth-child(3) {
+          img {
+            left: 0;
+            top: 100%;
+            transform: translate(-50%, -60%);
+          }
+        }
+
+        &:nth-child(2) {
+          img {
+            left: 90%;
+            top: 15%;
+            transform: translate(-50%, -60%);
+          }
+        }
+
+        &:nth-child(4) {
+          img {
+            left: 90%;
+            top: 15%;
+            transform: translate(-50%, -60%);
+          }
+        }
+      }
+    }
+  }
+}

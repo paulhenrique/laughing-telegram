@@ -1,0 +1,75 @@
+section.containerComoTrabalhamos {
+  background: white;
+  position: relative;
+
+  &:before,
+  &:after {
+    content: "";
+    height: 200px;
+    position: absolute;
+    width: 120%;
+    background: white;
+    border-radius: 50%;
+    top: 0;
+    transform: translateY(-50%);
+    z-index: 0;
+    max-width: 100%;
+
+    @media (min-width:1440px) {
+      height: 230px;
+    }
+  }
+
+  &:after {
+    top: 100%;
+    transform: translateY(-50%);
+  }
+
+  z-index: 2;
+
+  img.backgroundImage {
+    @include backgroundImageBasics;
+    max-heigth: 300px;
+  }
+
+
+  .container {
+    @include addContainer;
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      @include h1Header;
+    }
+
+    article {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 195px;
+
+      img {
+        max-width: 547px;
+      }
+
+      .containerText {
+        max-width: 582px;
+
+        h2 {
+          font-weight: 400;
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1.25rem;
+          color: #525252;
+          line-height: 2.68125rem;
+        }
+      }
+    }
+  }
+}

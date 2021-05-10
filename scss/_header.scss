@@ -1,0 +1,16 @@
+header {
+  @include addContainer;
+  padding-top: 135px;
+  min-height: 980px;
+
+  h1 {
+    color: white;
+    font-size: 4.75rem;
+    font-weight: 400;
+    max-width: 751px;
+  }
+
+  p {
+    @include HeaderParagraph;
+  }
+}

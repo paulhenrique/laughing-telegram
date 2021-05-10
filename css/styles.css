@@ -4,6 +4,11 @@
   --cyan: #00cfdb;
   --red: #f71857; }
 
+body {
+  background: var(--purple);
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden; }
+
 .cyan {
   color: var(--cyan); }
 
@@ -86,7 +91,8 @@ main {
       font-weight: normal;
       text-align: center; }
     main section:not(.NavbarContent):not(.containerComoTrabalhamos):not(.containerContact):not(.containerAssistenciaEducacional).containerFrentesDeAtuacao {
-      color: white; }
+      color: white;
+      padding-top: 10rem; }
       main section:not(.NavbarContent):not(.containerComoTrabalhamos):not(.containerContact):not(.containerAssistenciaEducacional).containerFrentesDeAtuacao .containerCards {
         display: grid;
         grid-template-columns: auto auto;
@@ -138,7 +144,25 @@ main {
             transform: translate(-50%, -60%); }
   main section.containerComoTrabalhamos {
     background: white;
-    position: relative; }
+    position: relative;
+    z-index: 2; }
+    main section.containerComoTrabalhamos:before, main section.containerComoTrabalhamos:after {
+      content: "";
+      height: 200px;
+      position: absolute;
+      width: 120%;
+      background: white;
+      border-radius: 50%;
+      top: 0;
+      transform: translateY(-50%);
+      z-index: 0;
+      max-width: 100%; }
+      @media (min-width: 1440px) {
+        main section.containerComoTrabalhamos:before, main section.containerComoTrabalhamos:after {
+          height: 230px; } }
+    main section.containerComoTrabalhamos:after {
+      top: 100%;
+      transform: translateY(-50%); }
     main section.containerComoTrabalhamos img.backgroundImage {
       position: absolute;
       bottom: 60%;
@@ -150,6 +174,7 @@ main {
       max-width: 1224px;
       width: 90%;
       margin: auto;
+      padding-top: 130px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -251,7 +276,8 @@ main {
           box-sizing: border-box; }
   main section.containerAssistenciaEducacional {
     background: var(--cyan);
-    position: relative; }
+    position: relative;
+    padding-bottom: 10rem; }
     main section.containerAssistenciaEducacional img.backgroundImage {
       position: absolute;
       bottom: 60%;
@@ -289,6 +315,7 @@ main {
           transform: translate(-35%, 69%); }
 
 footer {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -299,6 +326,20 @@ footer {
   background: var(--cyan);
   color: white;
   min-height: 300px; }
+  footer:before {
+    content: "";
+    height: 110px;
+    position: absolute;
+    width: 120%;
+    background: var(--cyan);
+    border-radius: 50%;
+    top: 0;
+    max-width: 100%;
+    transform: translateY(-50%);
+    z-index: -1; }
+    @media (min-width: 1440px) {
+      footer:before {
+        height: 230px; } }
   footer h3 {
     font-size: 1rem; }
   footer img {

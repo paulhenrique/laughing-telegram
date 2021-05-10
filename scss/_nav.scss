@@ -1,0 +1,29 @@
+nav {
+  @include addContainer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+
+  img {
+    width: 189px !important;
+  }
+
+  section.NavbarContent {
+    max-width: 379px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.125rem;
+      font-family: Poppins;
+      color: var(--purple);
+    }
+  }
+}
+
+//end Nav
