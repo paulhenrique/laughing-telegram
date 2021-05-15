@@ -279,8 +279,7 @@ main {
           main section.containerContact .containerForm form input:focus-visible,
           main section.containerContact .containerForm form textarea:focus-visible {
             filter: brightness(0.95);
-            outline: 0;
-            box-shadow: var(--red) 0 0 0 4px inset; }
+            outline: 0; }
         main section.containerContact .containerForm form .containerTextArea {
           position: relative;
           overflow: hidden;

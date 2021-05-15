@@ -180,11 +180,12 @@
       <h1>Entre em Contato</h1>
 
       <div class="containerForm">
-        <form>
-          <input type="email" placeholder="example@domain.com">
+        <form id="formDeContato">
+          <input required value="" type="email" id="emailContainer" placeholder="example@domain.com">
           <div class="containerTextArea">
-            <textarea name="" id="" placeholder="Escreva sua mensagem" cols="30" rows="10"></textarea>
-            <button type="button">
+            <textarea required value="" name="" id="messageContainer" placeholder="Escreva sua mensagem" cols="30"
+              rows="10"></textarea>
+            <button type="submit">
               <img src="/img/whatsapp.svg" alt="Enviar mensagem">
               <span>Entrar em<br> Contato</span>
             </button>
@@ -200,6 +201,7 @@
     <p>www.helloyotta.com.br | contato@helloyotta.com.br</p>
   </footer>
 </body>
+<script src="js/handleWhatsAppMessageSendler.js"></script>
 <script>
   // AOS.init();
 </script>

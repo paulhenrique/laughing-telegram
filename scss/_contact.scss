@@ -36,7 +36,6 @@ section.containerContact {
         &:focus-visible {
           filter: brightness(0.95);
           outline: 0;
-          box-shadow: var(--red) 0 0 0 4px inset;
         }
       }
 
