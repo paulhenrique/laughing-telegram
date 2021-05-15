@@ -131,8 +131,8 @@ main {
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          transition: filter 0.15s, box-shadow 0.25s, transform 0.25s;
           cursor: default;
+          transition: filter 0.15s, box-shadow 0.25s, transform 0.25s;
           position: relative;
           z-index: 0; }
           @media (max-width: 768px) {
@@ -156,7 +156,7 @@ main {
             position: absolute;
             position: absolute;
             z-index: 1; }
-            @media (max-width: 768px) {
+            @media (max-width: 1024px) {
               main section:not(.NavbarContent):not(.containerComoTrabalhamos):not(.containerContact):not(.containerAssistenciaEducacional).containerFrentesDeAtuacao .containerCards .card img {
                 display: none; } }
           main section:not(.NavbarContent):not(.containerComoTrabalhamos):not(.containerContact):not(.containerAssistenciaEducacional).containerFrentesDeAtuacao .containerCards .card:first-child img, main section:not(.NavbarContent):not(.containerComoTrabalhamos):not(.containerContact):not(.containerAssistenciaEducacional).containerFrentesDeAtuacao .containerCards .card:nth-child(3) img {
@@ -214,13 +214,15 @@ main {
       main section.containerComoTrabalhamos .container h1 {
         font-size: 3.375rem;
         font-weight: normal;
-        text-align: center; }
+        text-align: center;
+        margin-bottom: 4rem; }
       main section.containerComoTrabalhamos .container article {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        margin-bottom: 195px; }
+        margin-bottom: 195px;
+        gap: 30px; }
         @media (max-width: 768px) {
           main section.containerComoTrabalhamos .container article {
             flex-direction: column;
@@ -348,7 +350,8 @@ main {
       main section.containerAssistenciaEducacional div.container div.rightContain h1 {
         font-weight: 400;
         line-height: 5.0625rem;
-        font-size: 3rem; }
+        font-size: 3rem;
+        margin-bottom: 4rem; }
       main section.containerAssistenciaEducacional div.container div.rightContain p {
         font-size: 1.25rem;
         color: white;
