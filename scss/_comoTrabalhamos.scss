@@ -41,6 +41,10 @@ section.containerComoTrabalhamos {
     justify-content: center;
     align-items: center;
 
+    @media (max-width:768px) {
+      padding-bottom: 150px;
+    }
+
     h1 {
       @include h1Header;
     }
@@ -52,8 +56,21 @@ section.containerComoTrabalhamos {
       width: 100%;
       margin-bottom: 195px;
 
+      @media (max-width:768px) {
+        flex-direction: column;
+        margin-bottom: 35px;
+        text-align: center;
+        border-top: 2px var(--purple) solid;
+        padding-top: 20px;
+
+        h2 {
+          margin-top: 20px;
+        }
+      }
+
       img {
         max-width: 547px;
+        width: 100%;
       }
 
       .containerText {

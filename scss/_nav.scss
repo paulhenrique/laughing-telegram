@@ -9,6 +9,14 @@ nav {
     width: 189px !important;
   }
 
+  @media screen and (max-width: 768px) {
+    justify-content: flex-start;
+
+    img {
+      width: 129px !important;
+    }
+  }
+
   section.NavbarContent {
     max-width: 379px;
     width: 50%;
@@ -22,6 +30,12 @@ nav {
       font-size: 1.125rem;
       font-family: Poppins;
       color: var(--purple);
+
+      @media screen and (max-width: 768px) {
+        display: none;
+        color: white;
+
+      }
     }
   }
 }

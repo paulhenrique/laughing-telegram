@@ -8,6 +8,11 @@ header {
     font-size: 4.75rem;
     font-weight: 400;
     max-width: 751px;
+
+    @media (max-width:768px) {
+      font-size: 3.75rem;
+      text-align: center;
+    }
   }
 
   p {

@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+html {
+  font-size: 80%; }
+
 :root {
   --purple: #3a0f5b;
   --cyan: #00cfdb;
@@ -8,6 +11,9 @@ body {
   background: var(--purple);
   font-family: "Poppins", sans-serif;
   overflow-x: hidden; }
+  @media (max-width: 768px) {
+    body {
+      width: 100%; } }
 
 .cyan {
   color: var(--cyan); }
@@ -42,6 +48,11 @@ main {
     padding-top: 32px; }
     main nav img {
       width: 189px !important; }
+    @media screen and (max-width: 768px) {
+      main nav {
+        justify-content: flex-start; }
+        main nav img {
+          width: 129px !important; } }
     main nav section.NavbarContent {
       max-width: 379px;
       width: 50%;
@@ -54,6 +65,10 @@ main {
         font-size: 1.125rem;
         font-family: Poppins;
         color: var(--purple); }
+        @media screen and (max-width: 768px) {
+          main nav section.NavbarContent a {
+            display: none;
+            color: white; } }
   main header {
     max-width: 1224px;
     width: 90%;
@@ -65,6 +80,10 @@ main {
       font-size: 4.75rem;
       font-weight: 400;
       max-width: 751px; }
+      @media (max-width: 768px) {
+        main header h1 {
+          font-size: 3.75rem;
+          text-align: center; } }
     main header p {
       font-size: 1.25rem;
       color: white;
@@ -99,6 +118,9 @@ main {
         column-gap: 15px;
         row-gap: 15px;
         margin-top: 90px; }
+        @media (max-width: 768px) {
+          main section:not(.NavbarContent):not(.containerComoTrabalhamos):not(.containerContact):not(.containerAssistenciaEducacional).containerFrentesDeAtuacao .containerCards {
+            grid-template-columns: auto; } }
         main section:not(.NavbarContent):not(.containerComoTrabalhamos):not(.containerContact):not(.containerAssistenciaEducacional).containerFrentesDeAtuacao .containerCards .card {
           height: 596px;
           max-height: 596px;
@@ -113,6 +135,10 @@ main {
           cursor: default;
           position: relative;
           z-index: 0; }
+          @media (max-width: 768px) {
+            main section:not(.NavbarContent):not(.containerComoTrabalhamos):not(.containerContact):not(.containerAssistenciaEducacional).containerFrentesDeAtuacao .containerCards .card {
+              max-height: 286px;
+              padding: 0px 10px; } }
           main section:not(.NavbarContent):not(.containerComoTrabalhamos):not(.containerContact):not(.containerAssistenciaEducacional).containerFrentesDeAtuacao .containerCards .card:hover {
             filter: brightness(0.9);
             box-shadow: inset 0 0 0 2px var(--cyan);
@@ -130,6 +156,9 @@ main {
             position: absolute;
             position: absolute;
             z-index: 1; }
+            @media (max-width: 768px) {
+              main section:not(.NavbarContent):not(.containerComoTrabalhamos):not(.containerContact):not(.containerAssistenciaEducacional).containerFrentesDeAtuacao .containerCards .card img {
+                display: none; } }
           main section:not(.NavbarContent):not(.containerComoTrabalhamos):not(.containerContact):not(.containerAssistenciaEducacional).containerFrentesDeAtuacao .containerCards .card:first-child img, main section:not(.NavbarContent):not(.containerComoTrabalhamos):not(.containerContact):not(.containerAssistenciaEducacional).containerFrentesDeAtuacao .containerCards .card:nth-child(3) img {
             left: 0;
             top: 100%;
@@ -179,6 +208,9 @@ main {
       flex-direction: column;
       justify-content: center;
       align-items: center; }
+      @media (max-width: 768px) {
+        main section.containerComoTrabalhamos .container {
+          padding-bottom: 150px; } }
       main section.containerComoTrabalhamos .container h1 {
         font-size: 3.375rem;
         font-weight: normal;
@@ -189,8 +221,18 @@ main {
         align-items: center;
         width: 100%;
         margin-bottom: 195px; }
+        @media (max-width: 768px) {
+          main section.containerComoTrabalhamos .container article {
+            flex-direction: column;
+            margin-bottom: 35px;
+            text-align: center;
+            border-top: 2px var(--purple) solid;
+            padding-top: 20px; }
+            main section.containerComoTrabalhamos .container article h2 {
+              margin-top: 20px; } }
         main section.containerComoTrabalhamos .container article img {
-          max-width: 547px; }
+          max-width: 547px;
+          width: 100%; }
         main section.containerComoTrabalhamos .container article .containerText {
           max-width: 582px; }
           main section.containerComoTrabalhamos .container article .containerText h2 {
@@ -283,7 +325,16 @@ main {
       bottom: 60%;
       width: 100%;
       max-height: 500px;
-      overflow: hidden; }
+      overflow: hidden;
+      z-index: -1; }
+      @media (max-width: 768px) {
+        main section.containerAssistenciaEducacional img.backgroundImage {
+          position: absolute;
+          top: 0;
+          width: 100%;
+          max-height: 500px;
+          overflow: hidden;
+          transform: translateY(-69%); } }
     main section.containerAssistenciaEducacional div.container {
       max-width: 1224px;
       width: 90%;
@@ -291,6 +342,9 @@ main {
       display: flex;
       justify-content: space-between;
       color: white; }
+      @media (max-width: 768px) {
+        main section.containerAssistenciaEducacional div.container {
+          flex-direction: column; } }
       main section.containerAssistenciaEducacional div.container div.rightContain h1 {
         font-weight: 400;
         line-height: 5.0625rem;

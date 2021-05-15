@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
+html {
+  font-size: 80%;
+}
+
 :root {
   --purple: #3a0f5b;
   --cyan: #00cfdb;
@@ -11,6 +15,10 @@ body {
   background: var(--purple);
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+
+  @media(max-width:768px) {
+    width: 100%;
+  }
 }
 
 .cyan {
